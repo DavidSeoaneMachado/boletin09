@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="https://moodle.danielcastelao.org/daw/action_page.php" method="get">
+        <label for="nif">NIF:</label>
+        <input type="text" name="nif" value=""><br><br>
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" value=""><br><br>
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" name="apellidos" value=""><br><br>
+
+
+        <label for="edad">Edad:</label><br>
+        <input type="radio" name="edad" value="15-19">
+        <label for="edad">15-19</label><br>
+        <input type="radio" name="edad" value="20-29">
+        <label for="edad">20-29</label><br>
+        <input type="radio" name="edad" value="30-40">
+        <label for="edad">30-40</label><br><br>
+
+        <label for="estado">Estado civil:</label><br>
+        <input list="estado civil" name="estado" />
+        <datalist id="estado civil">
+            <option label="Soltero" value="Soltero">
+            <option label="Casado" value="Casado">
+            <option label="Divorciado" value="Divorciado">
+        </datalist><br><br>
+
+        <label for="aficiones">Aficiones:</label> <br>
+        <input type="checkbox" name="cine" id="aficiones">
+        <label for="cine">Cine</label><br>
+        <input type="checkbox" name="deportes" id="aficiones">
+        <label for="deportes">Deportes</label><br>
+        <input type="checkbox" name="lectura" id="aficiones">
+        <label for="lectura">Lectura</label><br>
+        <input type="checkbox" name="senderismo" id="aficiones">
+        <label for="senderismo">Senderismo</label> <br> <br>
+
+        <label for="comentarios">Comentarios:</label> <br>
+        <textarea name="comentarios" rows="5" cols="25">Escribe aquí tus comentarios</textarea><br><br>
+        <input type="submit" value="Enviar">
+
+
+
+        
+
+    </form>
+</body>
+
+</html>
